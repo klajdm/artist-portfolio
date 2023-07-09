@@ -18,12 +18,13 @@ export default function About() {
               <br />
             </p>
             <p className="max-w-xl">
-              I'm Klajdi Murataj, an Albanian visual artist. I got my start as a
-              graphic designer by creating a logo for my I've developed my
-              technique... Most of my finished pieces are black and white with
-              the occasional colour embellishment. I focus more on the shapes
-              and shadows in an Today, I am open to all kinds of design work,
-              although I am always drawn to passion projects that let me...
+              I&apos;m Klajdi Murataj, an Albanian visual artist. I got my start
+              as a graphic designer by creating a logo for my I&apos;ve
+              developed my technique... Most of my finished pieces are black and
+              white with the occasional colour embellishment. I focus more on
+              the shapes and shadows in an Today, I am open to all kinds of
+              design work, although I am always drawn to passion projects that
+              let me...
             </p>
           </div>
         </div>
