@@ -4,7 +4,7 @@ import ProfilePic from "../public/profile2.jpg";
 
 export default function About() {
   return (
-    <div className="relative min-w-fit min-h-screen lg:ml-[200px]">
+    <div className="relative min-w-fit min-h-screen lg:ml-[240px]">
       <div>
         <div className="flex flex-col items-center justify-center text-center">
           <div className="mt-20">

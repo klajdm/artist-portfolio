@@ -3,7 +3,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "../public/logo.png";
 import classNames from "classnames";
-import { motion } from "framer-motion";
 
 import {
   BsChevronDown,
@@ -23,7 +22,7 @@ export default function Navbar() {
   const ulClasses = classNames({ hidden: isCollapsed });
   const svgClasses = classNames({ "transform rotate-180": !isCollapsed });
   return (
-    <div className="fixed w-[200px] h-screen shadow top-0 left-0 z-20 bg-white overflow-hidden ">
+    <div className="fixed w-[240px] h-screen shadow top-0 left-0 z-20 bg-white overflow-hidden ">
       <div className="w-full flex justify-center p-5 lg:pt-10 bg-white">
         <Link href="/">
           <Image

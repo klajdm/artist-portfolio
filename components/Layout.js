@@ -38,7 +38,7 @@ export default function Layout({ children }) {
       <main>
         <div className="w-screen h-full flex relative overflow-hidden">
           <div
-            className={`-translate-x-[200px] left-0 top-0 lg:transform-none z-50 ${
+            className={`-translate-x-[240px] left-0 top-0 lg:transform-none z-50 ${
               isDrawerOpen
                 ? "transform-none ease-out duration-300"
                 : "ease-linear duration-300"
@@ -75,11 +75,11 @@ export default function Layout({ children }) {
               </div>
             </nav>
           </div>
-          <div className="flex-grow px-5 lg:px-0 mt-24 lg:mt-0">
+          <div className="flex-grow px-5 md:px-0 mt-24 lg:mt-0">
             <div
               className={`overflow-y-auto ${
                 isDrawerOpen
-                  ? "translate-x-[200px] ease-out duration-300"
+                  ? "translate-x-[240px] ease-out duration-300"
                   : "ease-linear duration-300"
               }`}
             >
