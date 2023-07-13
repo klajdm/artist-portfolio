@@ -77,7 +77,7 @@ export default function Layout({ children }) {
           </div>
           <div className="flex-grow px-5 md:px-0 mt-24 lg:mt-0">
             <div
-              className={`overflow-y-auto ${
+              className={`overflow-y-auto relative ${
                 isDrawerOpen
                   ? "translate-x-[240px] ease-out duration-300"
                   : "ease-linear duration-300"
@@ -91,15 +91,3 @@ export default function Layout({ children }) {
     </>
   );
 }
-
-//  <HiOutlineMenuAlt3
-//                   className={`text-2xl cursor-pointer ${
-//                     isDrawerOpen ? "hidden" : "flex"
-//                   }`}
-//                   on
-//                   Click={() => setIsDrawerOpen(!isDrawerOpen)}
-//                 />
-//                 <IoMdClose
-//                   className={`text-2xl cursor-pointer ${
-//                     isDrawerOpen ? "flex" : "hidden"
-//                   }`}

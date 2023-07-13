@@ -1,10 +1,10 @@
 import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 export default function Contact() {
   return (
-    <div className="min-w-fit min-h-screen flex relative flex-col text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center lg:ml-[240px]">
-      <h3 className=" absolute top-10 uppercase tracking-[10px] text-gray-500">
+    <div className="relative min-w-fit min-h-screen flex  flex-col text-center justify-evenly mx-auto items-center lg:ml-[240px]">
+      <h3 className=" absolute top-10 lg:top-24 md:top-16 uppercase tracking-[10px] text-gray-500 md:text-xl lg:text-2xl ">
         Contact
       </h3>
 

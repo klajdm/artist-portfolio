@@ -1,47 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { ref, listAll, getDownloadURL } from "firebase/storage";
 import Image from "next/image";
-import { storage } from "@/firebase/config";
 
-export default function Images() {
-  const [imageUrls, setImageUrls] = useState([]);
-
-  useEffect(() => {
-    // Reference to the images folder inside your Storage bucket
-    const imagesRef = ref(storage, "artworks");
-
-    // Fetch the list of images from the folder
-    listAll(imagesRef)
-      .then((res) => {
-        // Get the download URL for each image
-        const promises = res.items.map((item) => getDownloadURL(item));
-
-        // Resolve all the promises
-        return Promise.all(promises);
-      })
-      .then((urls) => {
-        // Set the image URLs in the state
-        setImageUrls(urls.reverse());
-      })
-      .catch((error) => {
-        console.log("Error retrieving image URLs:", error);
-      });
-  }, []);
-
+export default function Images({ artworks, setSelectedImg }) {
   return (
-    <div className="">
-      <h2>Image Gallery</h2>
-      {imageUrls.map((url) => (
-        <Image
-          key={url}
-          src={url}
-          alt="Image"
-          width={200}
-          height={300}
-          priority
-          className="w-auto h-auto"
-        />
-      ))}
+    <div className="min-h-full block relative justify-center overflow-hidden">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center items-center lg:ml-[240px] relative">
+        {artworks.map((artwork, index) => (
+          <div
+            onClick={() => setSelectedImg(artwork.link)}
+            key={index}
+            className=" m-2 lg:m-8 lg:p-5 p-1 relative"
+          >
+            <Image
+              src={artwork.link}
+              alt="Image"
+              width={500}
+              height={300}
+              priority={true}
+              className="top-0 left-0 w-full h-full hover:scale-110 duration-500"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
