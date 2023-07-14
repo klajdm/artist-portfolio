@@ -1,18 +1,43 @@
 import React from "react";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
     <div className="relative min-w-fit min-h-screen flex  flex-col text-center justify-evenly mx-auto items-center lg:ml-[240px]">
-      <h3 className=" absolute top-10 lg:top-24 md:top-16 uppercase tracking-[10px] text-gray-500 md:text-xl lg:text-2xl ">
+      <motion.h2
+        initial={{
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        className=" absolute top-12 lg:top-32 md:top-16 uppercase tracking-[10px] text-gray-500 text-xl lg:text-2xl "
+      >
         Contact
-      </h3>
+      </motion.h2>
 
-      <div className=" flex flex-col space-y-10">
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.7,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        className=" flex flex-col space-y-10"
+      >
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-gray-500/80 h-5  w-5 animate-pulse" />
-            <p className="">+1234567890</p>
+            <p className="">+355675432456</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
@@ -60,7 +85,7 @@ export default function Contact() {
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 }

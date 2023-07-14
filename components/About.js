@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import ProfilePic from "../public/profile2.jpg";
 
 export default function About() {
@@ -8,25 +9,71 @@ export default function About() {
       <div>
         <div className="flex flex-col items-center justify-center text-center">
           <div className="mt-20">
-            <Image src={ProfilePic} alt="" className="w-[250px] h-auto" />
+            <motion.img
+              initial={{
+                opacity: 0,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              viewport={{ once: true }}
+              src={ProfilePic.src}
+              alt=""
+              className="w-[250px] h-auto"
+            />
           </div>
-          <div className=" mt-10">
-            <h3 className=" top-24 uppercase tracking-[10px] text-gray-500">
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            transition={{
+              duration: 2,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            className=" mt-10"
+          >
+            <h3 className=" top-24 uppercase tracking-[10px] text-gray-500 text-lg lg:text-xl">
               About
             </h3>
             <p>
               <br />
             </p>
-            <p className="max-w-xl">
-              I&apos;m Klajdi Murataj, an Albanian visual artist. I got my start
-              as a graphic designer by creating a logo for my I&apos;ve
-              developed my technique... Most of my finished pieces are black and
-              white with the occasional colour embellishment. I focus more on
-              the shapes and shadows in an Today, I am open to all kinds of
-              design work, although I am always drawn to passion projects that
-              let me...
+            <p className="max-w-3xl">
+              My name is Klajdi Murataj and I am a freelance visual artist from
+              Albania. I have a bachelor&apos;s degree in Computer Science, but
+              I am a self-taught digital artist. I got my start as a graphic
+              designer by creating a logo for my high school using Adobe
+              Photoshop. After that, I became curious about the photo
+              manipulation tutorials suggested by YouTube, so I started
+              practicing them extensively. It has been six years since my first
+              photo manipulation edit, with some pauses here and there during
+              these years. Throughout this time, I have honed my skills and
+              expanded my repertoire as a visual artist. <br /> As I continued
+              to develop my artistic abilities, I also explored different
+              software tools and techniques to enhance my creative process. In
+              addition to Adobe Photoshop, I learned to utilize programs such as
+              Adobe Illustrator, After Effects, and Blender to bring my artistic
+              visions to life. These tools have allowed me to experiment with
+              different styles and push the boundaries of my artistic
+              expression.
+              <br /> In recent years, my focus as a visual artist has gravitated
+              towards creating artworks that delve into spiritual and
+              philosophical concepts, exploring the nature of existence and our
+              interconnectedness with the universe. Drawing inspiration from
+              various religious and spiritual traditions, as well as
+              philosophical theories, I strive to visually depict abstract ideas
+              such as transcendence, enlightenment, and the quest for higher
+              consciousness. These artworks serve as visual metaphors, inviting
+              viewers to ponder the deeper aspects of life and their own
+              spiritual journeys.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

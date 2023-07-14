@@ -7,11 +7,20 @@ import { useState } from "react";
 
 export default function Home({ artworks }) {
   const [selectedImg, setSelectedImg] = useState(null);
+  const [imageTitle, setImageTitle] = useState(null);
   return (
     <Layout>
-      <Images artworks={artworks} setSelectedImg={setSelectedImg} />
+      <Images
+        artworks={artworks}
+        setSelectedImg={setSelectedImg}
+        setImageTitle={setImageTitle}
+      />
       {selectedImg && (
-        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+        <Modal
+          selectedImg={selectedImg}
+          setSelectedImg={setSelectedImg}
+          imageTitle={imageTitle}
+        />
       )}
     </Layout>
   );

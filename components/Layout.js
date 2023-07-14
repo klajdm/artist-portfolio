@@ -13,7 +13,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Artwork Portfolio</title>
+        <title>Artwork Portfolio - Klajdi Murataj</title>
         <meta name="description" content="By Klajdi Murataj" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
