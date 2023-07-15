@@ -1,43 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import ProfilePic from "../public/profile2.jpg";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <div className="relative min-w-fit min-h-screen lg:ml-[240px]">
-      <div>
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.8,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+      >
         <div className="flex flex-col items-center justify-center text-center">
           <div className="mt-20">
-            <motion.img
-              initial={{
-                opacity: 0,
-              }}
-              transition={{
-                duration: 1.5,
-              }}
-              whileInView={{
-                opacity: 1,
-              }}
-              viewport={{ once: true }}
-              src={ProfilePic.src}
-              alt=""
-              className="w-[250px] h-auto"
-            />
+            <Image src={ProfilePic} alt="" className="w-[250px] h-auto" />
           </div>
-          <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            transition={{
-              duration: 2,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            viewport={{ once: true }}
-            className=" mt-10"
-          >
+          <div className=" mt-10">
             <h3 className=" top-24 uppercase tracking-[10px] text-gray-500 text-lg lg:text-xl">
               About
             </h3>
@@ -73,9 +58,9 @@ export default function About() {
               viewers to ponder the deeper aspects of life and their own
               spiritual journeys.
             </p>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

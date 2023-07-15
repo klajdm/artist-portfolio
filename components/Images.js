@@ -26,9 +26,7 @@ export default function Images({ artworks, setSelectedImg, setImageTitle }) {
               transition={{ delay: 1 }}
               src={artwork.link}
               alt="Image"
-              width={500}
-              height={300}
-              className="top-0 left-0 w-full h-full hover:scale-110 duration-500"
+              className="top-0 left-0 w-[500px] h-auto hover:scale-110 duration-500"
             />
           </motion.div>
         ))}
