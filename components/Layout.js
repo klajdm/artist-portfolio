@@ -36,7 +36,7 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <div className="w-screen h-full flex relative overflow-hidden">
+        <div className=" h-full flex relative overflow-hidden ">
           <div
             className={`-translate-x-[240px] left-0 top-0 lg:transform-none z-50 ${
               isDrawerOpen

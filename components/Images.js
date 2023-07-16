@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Images({ artworks, setSelectedImg, setImageTitle }) {
@@ -8,7 +7,7 @@ export default function Images({ artworks, setSelectedImg, setImageTitle }) {
     setImageTitle(title);
   }
   return (
-    <div className="min-h-full block relative justify-center overflow-hidden">
+    <div className="min-h-full block relative justify-center overflow-hidden scrollbar-thin">
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center items-center lg:ml-[240px] relative">
         {artworks.map((artwork, index) => (
           <motion.div

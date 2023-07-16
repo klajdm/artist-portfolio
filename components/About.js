@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import ProfilePic from "../public/profile2.jpg";
 import { motion } from "framer-motion";
+import Spotify from "./Spotify";
 
 export default function About() {
   return (
-    <div className="relative min-w-fit min-h-screen lg:ml-[240px]">
+    <div className="relative min-w-fit min-h-screen lg:ml-[240px] flex flex-col items-center">
       <motion.div
         initial={{
           opacity: 0,
@@ -61,6 +62,7 @@ export default function About() {
           </div>
         </div>
       </motion.div>
+      <Spotify />
     </div>
   );
 }

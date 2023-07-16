@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { AiOutlineClose } from "react-icons/ai";
 import { CgClose } from "react-icons/cg";
 
 export default function Modal({ selectedImg, setSelectedImg, imageTitle }) {
