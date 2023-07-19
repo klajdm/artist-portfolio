@@ -37,7 +37,7 @@ export default function Navbar() {
       </div>
       <aside className="p-[20%]">
         <nav>
-          <ul className="text-xl space-y-4 font-semibold ">
+          <ul className="text-xl space-y-4 font-['Signika'] ">
             <li className="hover:text-gray-400 transition duration-300 ease-in-out">
               <Link href="/">Artworks</Link>
             </li>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 <span className="ml-1">Shop</span>
               </a>
               <ul
-                className={`${ulClasses} text-base space-y-4 font-normal pl-5`}
+                className={`${ulClasses} text-base space-y-4 font-light pl-5`}
               >
                 <li className="pt-4 ">
                   <Link href="https://artgrab.co/art/klajdart" target="_blank">

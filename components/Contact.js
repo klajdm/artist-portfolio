@@ -10,7 +10,7 @@ export default function Contact() {
     window.location.href = `mailto:klajdart@gmail?subject=${formData.subject}&body=${formData.message}`;
   };
   return (
-    <div className="relative min-w-fit min-h-screen flex  flex-col text-center justify-evenly mx-auto items-center lg:ml-[240px]">
+    <div className="relative min-w-fit min-h-screen flex  flex-col text-center justify-evenly mx-auto items-center ">
       <motion.h2
         initial={{
           opacity: 0,
@@ -22,7 +22,7 @@ export default function Contact() {
           opacity: 1,
         }}
         viewport={{ once: true }}
-        className=" absolute top-12 lg:top-32 md:top-16 uppercase tracking-[10px] text-gray-500 text-xl lg:text-2xl "
+        className=" absolute top-12 font-['Roboto_Slab'] lg:top-32 md:top-16 uppercase tracking-[10px] text-gray-500 text-xl lg:text-2xl "
       >
         Contact
       </motion.h2>

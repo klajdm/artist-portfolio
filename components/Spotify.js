@@ -41,7 +41,7 @@ export default function Spotify() {
     },
   };
   return (
-    <div className=" relative block mt-10">
+    <div className=" relative block my-10 md:mx-8">
       <div className="text-center mb-7 ">
         <h2 className=" py-3 lg:text-xl">
           Below you can see some of my artworks which have been lincesed on{" "}
@@ -63,7 +63,7 @@ export default function Spotify() {
               scale: 0.8,
             }}
             transition={{
-              duration: 0.8,
+              duration: 1.2,
             }}
             whileInView={{
               opacity: 1,

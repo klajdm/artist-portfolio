@@ -1,15 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Dosis", "Roboto Slab", "Signika", sans-serif;
   }
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 13px;
   /* Width of the scrollbar */
 }
 
@@ -34,7 +37,6 @@
   .contactInput {
     @apply outline-none rounded-xl border px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all;
   }
-
 }
 
 .backdrop {
@@ -45,4 +47,31 @@
   height: 100%;
   background: white;
   z-index: 999;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: absolute;
+  margin: auto auto;
+  min-height: 150px;
+}
+
+.loading-icon {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #000;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import Logo from "../public/logo.png";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <div className=" h-full flex relative overflow-hidden ">
+        <div className=" h-full flex relative overflow-hidden flex-col ">
           <div
             className={`-translate-x-[240px] left-0 top-0 lg:transform-none z-50 ${
               isDrawerOpen
@@ -54,7 +55,8 @@ export default function Layout({ children }) {
                     src={Logo}
                     alt="Logo"
                     width={100}
-                    className="cursor-pointer z-0"
+                    height={100}
+                    className="cursor-pointer z-0 "
                     priority
                   />
                 </Link>
@@ -75,7 +77,10 @@ export default function Layout({ children }) {
               </div>
             </nav>
           </div>
-          <div className="flex-grow px-5 md:px-0 mt-24 lg:mt-0">
+          <div
+            onClick={() => setIsDrawerOpen(false)}
+            className="flex-grow mx-5 mt-28 lg:mt-5 lg:ml-[260px]"
+          >
             <div
               className={`overflow-y-auto relative ${
                 isDrawerOpen
@@ -85,6 +90,9 @@ export default function Layout({ children }) {
             >
               {children}
             </div>
+          </div>
+          <div className="mx-5 text-center my-4 lg:hidden">
+            <Footer />
           </div>
         </div>
       </main>

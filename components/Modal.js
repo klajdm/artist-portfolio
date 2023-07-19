@@ -24,7 +24,7 @@ export default function Modal({ selectedImg, setSelectedImg, imageTitle }) {
           layout
           src={selectedImg}
           alt="enlarged image"
-          className="block max-w-[70%] max-h-[80%] lg:max-w-[25%] my-32 lg:my-20 mx-auto"
+          className="block max-w-[70%] max-h-[80%] md:max-w-[50%] lg:max-w-[25%] my-32 lg:my-20 mx-auto"
         />
         <motion.div
           initial={{ y: -20, opacity: 0 }}

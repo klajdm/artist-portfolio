@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function Home({ artworks }) {
   const [selectedImg, setSelectedImg] = useState(null);
   const [imageTitle, setImageTitle] = useState(null);
+
   return (
     <Layout>
       <Images
@@ -28,7 +29,10 @@ export default function Home({ artworks }) {
 
 export async function getServerSideProps() {
   await mongooseConnect();
-  const artworks = await Artworks.find({}, null, { sort: { createdAt: -1 } });
+  const artworks = await Artworks.find({}, null, {
+    sort: { createdAt: -1 },
+    limit: 90,
+  });
   return {
     props: {
       artworks: JSON.parse(JSON.stringify(artworks)),
