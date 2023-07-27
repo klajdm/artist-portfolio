@@ -62,7 +62,6 @@
 .loader {
   position: absolute;
   margin: auto auto;
-  min-height: 150px;
 }
 
 .loading-icon {

@@ -60,14 +60,12 @@ export default function Spotify() {
           <motion.div
             initial={{
               opacity: 0,
-              scale: 0.8,
             }}
             transition={{
-              duration: 1.2,
+              duration: 2,
             }}
             whileInView={{
               opacity: 1,
-              scale: 1,
             }}
             viewport={{ once: true }}
             key={id}

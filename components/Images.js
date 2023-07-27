@@ -38,7 +38,8 @@ export default function Images({ artworks, setSelectedImg, setImageTitle }) {
               animate={{ opacity: 1 }}
               transition={{ delay: 5.5 }}
               src={artwork.link}
-              alt="Image"
+              alt="Artwork"
+              loading="lazy"
               className="top-0 left-0 w-[500px] h-auto hover:scale-110 duration-500"
             />
           </motion.div>

@@ -31,7 +31,7 @@ export async function getServerSideProps() {
   await mongooseConnect();
   const artworks = await Artworks.find({}, null, {
     sort: { createdAt: -1 },
-    limit: 90,
+    limit: 56,
   });
   return {
     props: {
