@@ -70,13 +70,13 @@ export default function Spotify() {
             viewport={{ once: true }}
             key={id}
           >
-            <iframe
+            <embed
               src={link}
               allowFullScreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
               className="w-[100%] h-20 rounded-2xl md:w-[100%] md:h-[352px]"
-            ></iframe>
+            ></embed>
           </motion.div>
         ))}
       </div>

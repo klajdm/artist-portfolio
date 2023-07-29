@@ -5,11 +5,11 @@ import React from "react";
 
 export default function about() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>Artwork Portfolio: About</title>
       </Head>
       <About />
-    </Layout>
+    </>
   );
 }

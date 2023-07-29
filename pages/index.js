@@ -10,7 +10,7 @@ export default function Home({ artworks }) {
   const [imageTitle, setImageTitle] = useState(null);
 
   return (
-    <Layout>
+    <>
       <Images
         artworks={artworks}
         setSelectedImg={setSelectedImg}
@@ -23,7 +23,7 @@ export default function Home({ artworks }) {
           imageTitle={imageTitle}
         />
       )}
-    </Layout>
+    </>
   );
 }
 
