@@ -1,24 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import ProfilePic from "../public/profile2.jpg";
-import { motion } from "framer-motion";
+import ProfilePic from "../public/profile3.jpg";
 import Spotify from "./Spotify";
 
 export default function About() {
   return (
     <div className="relative min-w-fit min-h-screen flex flex-col items-center">
-      <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.8,
-        }}
-        whileInView={{
-          opacity: 1,
-        }}
-        viewport={{ once: true }}
-      >
+      <div>
         <div className="flex flex-col items-center justify-center text-center">
           <div className="mt-20">
             <Image src={ProfilePic} alt="" className=" w-[250px] h-auto" />
@@ -69,7 +57,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
       <Spotify />
     </div>
   );

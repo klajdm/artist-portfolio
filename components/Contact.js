@@ -11,35 +11,11 @@ export default function Contact() {
   };
   return (
     <div className="relative min-w-fit min-h-screen flex  flex-col text-center justify-evenly mx-auto items-center ">
-      <motion.h2
-        initial={{
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        whileInView={{
-          opacity: 1,
-        }}
-        viewport={{ once: true }}
-        className=" absolute top-12 font-['Roboto_Slab'] lg:top-32 md:top-16 uppercase tracking-[10px] text-gray-500 text-xl lg:text-2xl "
-      >
+      <h2 className=" absolute top-12 font-['Roboto_Slab'] lg:top-32 md:top-16 uppercase tracking-[10px] text-gray-500 text-xl lg:text-2xl ">
         Contact
-      </motion.h2>
+      </h2>
 
-      <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.7,
-        }}
-        whileInView={{
-          opacity: 1,
-        }}
-        viewport={{ once: true }}
-        className=" flex flex-col space-y-10"
-      >
+      <div className=" flex flex-col space-y-10">
         <div className="space-y-5">
           <Link
             href="tel:+355675432456"
@@ -104,7 +80,7 @@ export default function Contact() {
             </button>
           </div>
         </form>
-      </motion.div>
+      </div>
     </div>
   );
 }

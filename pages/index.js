@@ -1,5 +1,5 @@
 import Images from "@/components/Images";
-import Layout from "@/components/Layout";
+import Layout from "@/components/Layout/Layout";
 import Modal from "@/components/Modal";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Artworks } from "@/models/Artworks";

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import Logo from "../public/logo.png";
+import Logo from "../../public/logo.png";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {

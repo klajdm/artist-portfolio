@@ -15,7 +15,7 @@ export default function Images({ artworks, setSelectedImg, setImageTitle }) {
   }
   return (
     <div className="min-h-full block relative overflow-hidden scrollbar-thin">
-      <div className="grid grid-cols-3 gap-3 md:gap-5 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 justify-between  relative">
+      <div className="grid grid-cols-3 gap-3 md:gap-5 md:grid-cols-4  xl:grid-cols-5 justify-between  relative">
         {artworks.map((artwork, index) => (
           <motion.div
             layout
@@ -24,7 +24,7 @@ export default function Images({ artworks, setSelectedImg, setImageTitle }) {
             transition={{ delay: 2 }}
             onClick={() => handleArtworkClick(artwork.link, artwork.title)}
             key={index}
-            className=" xl:m-10 lg:p-5 p-2 md:p-3 relative flex justify-center items-center"
+            className=" 3xl:m-10 xl:m-2 lg:p-5 p-2 md:p-3 relative flex justify-center items-center"
           >
             {isLoading ? (
               <div className="loader">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "../public/logo.png";
+import Logo from "../../public/logo.png";
 import classNames from "classnames";
 
 import {
@@ -28,9 +28,9 @@ export default function Navbar() {
           <Image
             src={Logo}
             alt="Logo"
-            width={100}
+            width={200}
             height={100}
-            className="cursor-pointer lg:w-[200px] h-auto "
+            className="cursor-pointer h-auto "
             priority
           />
         </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
             <BsTwitter />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/klajdi-murataj-0290a1230/"
+            href="https://www.linkedin.com/in/klajdi-murataj-511617285/"
             target="_blank"
           >
             <BsLinkedin />
