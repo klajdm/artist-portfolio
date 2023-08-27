@@ -40,7 +40,7 @@ export default function Images({ artworks, setSelectedImg, setImageTitle }) {
               src={artwork.link}
               alt="Artwork"
               loading="lazy"
-              className="top-0 left-0 w-[500px] h-auto hover:scale-110 duration-500"
+              className="top-0 left-0 w-[500px] h-auto hover:scale-110 duration-500 hover:cursor-pointer"
             />
           </motion.div>
         ))}
