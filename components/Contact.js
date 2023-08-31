@@ -46,6 +46,7 @@ export default function Contact() {
               type="text"
               name="name"
               autoComplete="on"
+              required
             />
             <input
               {...register("email")}
@@ -54,6 +55,7 @@ export default function Contact() {
               type="email"
               name="email"
               autoComplete="on"
+              required
             />
           </div>
 
@@ -63,6 +65,7 @@ export default function Contact() {
             className="contactInput"
             type="text"
             name="subject"
+            required
           />
 
           <textarea
@@ -70,6 +73,7 @@ export default function Contact() {
             placeholder="Message"
             className="contactInput"
             name="message"
+            required
           />
           <div className="flex items-end justify-end pt-4">
             <button
