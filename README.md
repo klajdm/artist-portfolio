@@ -1,7 +1,7 @@
 # 🎨 Artist Portfolio - Klajdi Murataj
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Next.js](https://img.shields.io/badge/Next.js-13.4.9-black)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-13.4.9-blue)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-3.3.2-blue)](https://tailwindcss.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-5.7.0-green)](https://mongodb.com/)
